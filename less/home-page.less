@@ -94,10 +94,33 @@
         margin-bottom: 26px;
       }
 
+      .signup_form{
+        .flex_direction(flex, column);
+        input{
+          margin-bottom:1rem;
+          height: 3rem;
+          border-radius: 0.3rem;
+        }
+        .mailinglist{
+          .flex_direction(flex, row);
+          div{
+            font-size: 1.5rem;
+            margin-top: 1rem;
+          }
+          .checkoutbox{
+            font-size: 4rem;
+          }
+        }
+      }
+
       .btn {
         .btn_style(10rem, 4rem);
+        animation-name: button_animation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
         &:hover{
           .btn_hover(@porcelain, @btn-bg-color);
+          animation-name: none;
         }
         @media @phone{
           width: 100%;
