@@ -165,6 +165,9 @@ p {
   display: flex;
   flex-direction: column-reverse;
   background-color: #F6F6F6;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(246, 246, 246, 0.5);
 }
 @media (max-width: 500px) {
   .container_nav {
@@ -207,6 +210,9 @@ footer {
   .home {
     width: 95%;
   }
+}
+.home .intro .header_img img {
+  margin-top: 8rem;
 }
 @media (max-width: 500px) {
   .home .intro .header_img img {
