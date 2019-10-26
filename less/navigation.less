@@ -1,1 +1,28 @@
 // Navigation code here
+.container_nav{
+    margin: 0 auto;
+    .flex_direction(flex, column-reverse);
+    background-color: @wild-sand;    
+    position: fixed;
+    width: 100%;
+    background-color: rgba(246,246,246,0.5);
+    @media @phone{
+        width: 95%;
+    }
+    nav{
+        max-width: 800px;
+        .width_margin_auto(100%);
+        .flex_direction(flex, row);
+        justify-content: center;
+        a{
+            text-decoration: none;
+            color: @shuttle-gray;
+            font-size: 1.7rem;
+            margin: 1rem;
+        }
+    }
+    .logo_nav{
+        font-size: 4rem;
+        text-align: center;
+    }
+}
