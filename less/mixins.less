@@ -1,1 +1,26 @@
 // Mixins Here
+.btn_style(@width, @height){
+    background-color: @btn-bg-color;
+        border-radius: 0.7rem;
+        width: @width;
+        height: @height;
+        color: @porcelain;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 1rem;
+}
+
+.btn_hover(@bgcolor,@color){
+    background-color: @bgcolor;
+    color: @color;
+}
+
+.flex_direction(@display, @dir){
+    display: @display;
+    flex-direction: @dir;
+}
+
+.width_margin_auto(@wi){
+    width: @wi;
+    margin: 0 auto;
+}
